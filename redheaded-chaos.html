@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redheaded Chaos &mdash; Photography, Blog &amp; Creative</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --rc-bg: #FBF7EE;         /* Cream */
+      --rc-cream-deep: #F4EEDF; /* elevated cream */
+      --rc-sage: #8A9075;       /* Sage */
+      --rc-sage-deep: #6B7259;
+      --rc-bark: #5A5348;       /* Bark - body text */
+      --rc-bark-deep: #3F3A32;  /* headings */
+    }
+    body { background: var(--rc-bg); color: var(--rc-bark); }
+    .site-header { background: var(--rc-bg); border-color: rgba(90, 83, 72, 0.15); }
+    .logo-word { color: var(--rc-bark-deep) !important; }
+    .logo-word span { color: var(--rc-sage) !important; }
+    .logo-mark { color: var(--rc-sage); }
+    nav a { color: var(--rc-bark); }
+    nav a:hover { color: var(--rc-sage-deep); }
+    h1, h2, h3 { color: var(--rc-bark-deep); font-family: 'Cormorant Garamond', serif; }
+    p { color: var(--rc-bark); }
+
+    .rc-hero {
+      padding: 5rem 0 3rem;
+      text-align: center;
+      position: relative;
+    }
+    .rc-eyebrow {
+      font-family: 'Inter', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+      font-size: 0.75rem;
+      color: var(--rc-sage-deep);
+      margin-bottom: 1.2rem;
+    }
+    .rc-hero h1 {
+      font-size: clamp(2.6rem, 6vw, 4.5rem);
+      font-style: italic;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      line-height: 1.1;
+    }
+    .rc-hero h1 .accent { color: var(--rc-sage-deep); }
+    .rc-hero .lede {
+      max-width: 540px;
+      margin: 0 auto 2rem;
+      font-size: 1.1rem;
+    }
+    .rc-cta {
+      display: inline-block;
+      padding: 0.85rem 2rem;
+      background: var(--rc-sage-deep);
+      color: var(--rc-bg);
+      border-radius: 2px;
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .rc-cta:hover { background: var(--rc-bark-deep); transform: translateY(-1px); }
+
+    .rc-sections {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+      max-width: 960px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+    .rc-tile {
+      background: var(--rc-cream-deep);
+      border: 1px solid rgba(138, 144, 117, 0.3);
+      border-radius: 6px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+    .rc-tile:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(59, 52, 42, 0.08);
+      border-color: var(--rc-sage);
+    }
+    .rc-tile-icon {
+      width: 40px;
+      height: 40px;
+      color: var(--rc-sage-deep);
+      margin: 0 auto 0.8rem;
+    }
+    .rc-tile-icon svg { width: 100%; height: 100%; }
+    .rc-tile h3 {
+      font-size: 1.35rem;
+      margin: 0 0 0.4rem;
+    }
+    .rc-tile p { font-size: 0.9rem; margin: 0; }
+
+    .rc-quote {
+      max-width: 620px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+      text-align: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.4rem;
+      color: var(--rc-bark-deep);
+      line-height: 1.4;
+      border-left: 2px solid var(--rc-sage);
+      border-right: 2px solid var(--rc-sage);
+    }
+
+    footer { background: var(--rc-cream-deep); border-color: rgba(90, 83, 72, 0.15); }
+    footer p { color: var(--rc-bark); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Back to Reyda">
+        <svg class="logo-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M16 28 V17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M16 17 Q 6 14, 6 6 Q 13 8, 16 17 Z" fill="currentColor"/>
+          <path d="M16 17 Q 26 14, 26 6 Q 19 8, 16 17 Z" fill="currentColor" opacity="0.75"/>
+          <circle cx="16" cy="4" r="1.8" fill="currentColor"/>
+        </svg>
+        <span class="logo-word">reyda<span>.co</span></span>
+      </a>
+      <nav>
+        <a href="index.html">&larr; Reyda</a>
+        <a href="point54.html">Point54 Visuals</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="rc-hero">
+      <div class="container">
+        <p class="rc-eyebrow">Redheaded Chaos</p>
+        <h1>Photos, words,<br/><span class="accent">&amp; beautiful mess.</span></h1>
+        <p class="lede">A corner of the internet for photography, essays, and everything made along the way. Slow, honest, a little chaotic &mdash; on purpose.</p>
+        <a href="#" class="rc-cta">Latest posts (coming soon)</a>
+      </div>
+    </section>
+
+    <div class="rc-sections">
+      <div class="rc-tile">
+        <div class="rc-tile-icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <rect x="3" y="9" width="26" height="18" rx="2" stroke="currentColor" stroke-width="1.8" fill="none"/>
+            <path d="M11 9 L13 5 H19 L21 9" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+            <circle cx="16" cy="18" r="5" stroke="currentColor" stroke-width="1.8" fill="none"/>
+          </svg>
+        </div>
+        <h3>Photography</h3>
+        <p>Slow-shutter days by the lake, the garden, the coin binder open under lamplight.</p>
+      </div>
+      <div class="rc-tile">
+        <div class="rc-tile-icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <path d="M6 4 H22 L26 8 V28 H6 Z" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+            <path d="M22 4 V8 H26" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+            <path d="M10 13 H22 M10 17 H22 M10 21 H18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Blog</h3>
+        <p>Field notes, gear checklists, fishing knots learned the hard way, and stories from the shore.</p>
+      </div>
+      <div class="rc-tile">
+        <div class="rc-tile-icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <path d="M16 4 L19 12 L27 13 L21 19 L23 27 L16 23 L9 27 L11 19 L5 13 L13 12 Z" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Creative</h3>
+        <p>Sketches, mockups, moodboards, and side projects &mdash; the workshop where ideas get their first coat.</p>
+      </div>
+      <div class="rc-tile">
+        <div class="rc-tile-icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none">
+            <path d="M6 20 L14 12 L20 18 L26 12" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20 12 H26 V18" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 26 H28" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Journal</h3>
+        <p>Half-formed thoughts, seasonal moods, and small wins &mdash; posted when the light is right.</p>
+      </div>
+    </div>
+
+    <p class="rc-quote">"Make the mess. Then make it beautiful."</p>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>Redheaded Chaos &middot; A Reyda venture &middot; &copy; 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
