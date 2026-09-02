@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Point54 Visuals &mdash; Photography &amp; Videography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --p54-bg: #F5EFE3;        /* Linen */
+      --p54-oat: #E2D8C1;       /* Oat - tiles/borders */
+      --p54-oat-deep: #D4C9AE;
+      --p54-barn: #5C4A2E;      /* Barn Oak */
+      --p54-barn-deep: #4A3B24;
+      --p54-body: #6B5A3E;      /* softer barn for body */
+    }
+    body { background: var(--p54-bg); color: var(--p54-body); }
+    .site-header { background: var(--p54-bg); border-color: rgba(92, 74, 46, 0.15); }
+    .logo-word { color: var(--p54-barn-deep) !important; }
+    .logo-word span { color: var(--p54-barn) !important; }
+    .logo-mark { color: var(--p54-barn); }
+    nav a { color: var(--p54-body); }
+    nav a:hover { color: var(--p54-barn); }
+    h1, h2, h3 { color: var(--p54-barn-deep); font-family: 'Cormorant Garamond', serif; }
+    p { color: var(--p54-body); }
+
+    .p54-hero {
+      padding: 6rem 0 3rem;
+      text-align: center;
+    }
+    .p54-eyebrow {
+      font-family: 'Inter', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+      font-size: 0.75rem;
+      color: var(--p54-barn);
+      margin-bottom: 1.2rem;
+    }
+    .p54-hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      margin-bottom: 1rem;
+      line-height: 1.1;
+    }
+    .p54-subline {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.35rem;
+      color: var(--p54-barn);
+      margin: -0.4rem 0 1.4rem;
+      letter-spacing: 0.01em;
+    }
+    .p54-hero .lede {
+      max-width: 520px;
+      margin: 0 auto 2rem;
+      font-size: 1.1rem;
+      color: var(--p54-body);
+    }
+    .frames {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 3rem auto;
+      max-width: 900px;
+      padding: 0 1.5rem;
+    }
+    .frame {
+      aspect-ratio: 4/5;
+      background: var(--p54-oat);
+      border: 1px solid var(--p54-oat-deep);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      color: var(--p54-barn);
+      font-size: 0.95rem;
+      font-style: italic;
+      letter-spacing: 0.05em;
+    }
+    .frame:nth-child(2) { aspect-ratio: 4/6; }
+    .frame:nth-child(3) { aspect-ratio: 3/4; }
+    .cta-btn {
+      display: inline-block;
+      padding: 0.85rem 2rem;
+      background: var(--p54-barn);
+      color: var(--p54-bg);
+      border-radius: 2px;
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .cta-btn:hover { background: var(--p54-barn-deep); transform: translateY(-1px); }
+    footer { background: var(--p54-oat); border-color: var(--p54-oat-deep); }
+    footer p { color: var(--p54-body); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Back to Reyda">
+        <svg class="logo-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M16 28 V17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M16 17 Q 6 14, 6 6 Q 13 8, 16 17 Z" fill="currentColor"/>
+          <path d="M16 17 Q 26 14, 26 6 Q 19 8, 16 17 Z" fill="currentColor" opacity="0.75"/>
+          <circle cx="16" cy="4" r="1.8" fill="currentColor"/>
+        </svg>
+        <span class="logo-word">reyda<span>.co</span></span>
+      </a>
+      <nav>
+        <a href="index.html">&larr; Reyda</a>
+        <a href="redheaded-chaos.html">Redheaded Chaos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="p54-hero">
+      <div class="container">
+        <p class="p54-eyebrow">Point54 Visuals</p>
+        <h1>Where the road meets the field.</h1>
+        <p class="p54-subline">Built by hand. Shot in motion.</p>
+        <p class="lede">Trucks, cars, farming &mdash; and the moments in between. Captured from the driver&rsquo;s seat of rural Alberta.</p>
+        <a href="#" class="cta-btn">View portfolio (coming soon)</a>
+      </div>
+    </section>
+
+    <div class="frames">
+      <div class="frame">Trucks</div>
+      <div class="frame">Cars</div>
+      <div class="frame">Farming</div>
+      <div class="frame">In Between</div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>Point54 Visuals &middot; A Reyda venture &middot; &copy; 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
